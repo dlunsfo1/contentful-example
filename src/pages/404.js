@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Layout from '../components/Layout';
 import styles from '../css/error.module.css';
 import Banner from '../components/Banner';
@@ -9,9 +10,9 @@ const error = () => {
     <Layout>
       <header className={styles.error}>
         <Banner title="oops">
-          <Link to="/" className="btn-white">
+          <AniLink to="/" className="btn-white">
             back to home page
-          </Link>
+          </AniLink>
         </Banner>
       </header>
     </Layout>

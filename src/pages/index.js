@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
 import Layout from '../components/Layout';
 import Banner from '../components/Banner';
 import About from '../components/Home/About';
@@ -11,9 +13,9 @@ export default ({ data }) => (
   <Layout>
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner title="continue explorer" info="Lorem ipsum">
-        <Link to="/tours" className="btn-white">
+        <AniLink to="/tours" className="btn-white">
           Explore Tours
-        </Link>
+        </AniLink>
       </Banner>
     </StyledHero>
     <About />

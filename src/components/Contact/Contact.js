@@ -19,6 +19,7 @@ const Contact = () => {
             id="name"
             className={styles.formControl}
             placeHolder="your name"
+            required
           />
           <label htmlFor="email">email</label>
           <input
